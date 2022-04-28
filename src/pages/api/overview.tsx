@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-head-element */
-// https://play.tailwindcss.com/TYb0XtCyeG?size=1100x720
 import millify from "millify";
 import { withOGImage } from "next-api-og-image";
 
@@ -9,7 +7,7 @@ export default withOGImage({
   width: 1200,
   height: 630,
   template: {
-    react: ({ totalDeposits, totalBorrowed, currentAPY, yieldReserve }) => (
+    react: ({ lunaPrice, numberOfWallets, activeUser }) => (
       <>
         <head>
           <link
@@ -25,48 +23,42 @@ export default withOGImage({
           <div style={{ width: '1200px', height: '630px' }} className="mx-auto bg-black p-16 flex flex-col divide-y justify-center gap-4">
             <div className="flex justify-between">
               <div className="flex">
-                <img alt="Anchor Icon" width="80" height="80" className="mr-4" src="/anchor.svg" />
-                <h1 className="text-8xl font-bold text-gray-300 leading-tight">Anchor </h1>
+                <img alt="Anchor Icon" className="h-24 w-24 mt-4" src="/terra.png" />
+                <h1 className=" ml-4 text-8xl font-bold text-gray-300 leading-tight">Overview</h1>
               </div>
-              <img alt="TerraDash Icon" className="h-28 w-28" src="/terradash.png" />
+              <img alt="TerraDash Icon" className="h-28 w-28" src="https://cdn.discordapp.com/attachments/964167275064197160/967881200570101810/Group_15.png" />
             </div>
             <span>
               <p className="font-medium leading-normal text-5xl text-gray-500 pt-4">
                 According our research
-                Total Deposits in Anchor is
+                Terra Network has
+                <span className="text-green-400">&nbsp;
+                  {
+                    millify(+numberOfWallets, {
+                      precision: 2,
+                      decimalSeparator: ".",
+                    })
+                  } Unique Wallets&nbsp;</span>
+                and
+                <span className="text-green-400">
+                  &nbsp;
+                  {
+                    millify(+activeUser, {
+                      precision: 2,
+                      decimalSeparator: ".",
+                    })
+                  }
+                  &nbsp;
+                </span>
+                of them been Active in<span className="text-green-400">&nbsp;Past 30 days</span>.
+                <br />
+                Current <span className="text-yellow-400">LUNA</span> Price is
                 <span className="text-green-400">&nbsp; {
-                  millify(+totalDeposits, {
+                  millify(+lunaPrice, {
                     precision: 2,
                     decimalSeparator: ".",
                   })
-                } UST&nbsp;</span>
-                and Total Borrow Amount
-                <span className="text-red-400">&nbsp;
-                  {
-                    millify(+totalBorrowed, {
-                      precision: 2,
-                      decimalSeparator: ".",
-                    })
-                  }&nbsp;UST&nbsp;</span>.
-                In Earn Side Anchor has
-                <span className="text-green-400">&nbsp;
-                  {
-                    millify(+currentAPY, {
-                      precision: 2,
-                      decimalSeparator: ".",
-                    })
-                  }
-                  % APY&nbsp;</span>
-                on UST and has
-                <span className="text-green-400">&nbsp;
-                  {
-                    millify(+yieldReserve, {
-                      precision: 2,
-                      decimalSeparator: ".",
-                    })
-                  }
-                  &nbsp;UST&nbsp;</span>
-                Yield Reserve.
+                } USD&nbsp;</span>.
                 <br className="mb-2" />
                 <span className="text-base w-full mt-3 text-left">
                   for more information you can click this image or go to <span className="underline text-blue-300">TerraDash.Vercel.app</span>
