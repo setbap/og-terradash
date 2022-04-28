@@ -4,7 +4,8 @@ import millify from "millify";
 import { withOGImage } from "next-api-og-image";
 
 export default withOGImage({
-  type: 'jpeg',
+  type: 'png',
+  quality: undefined,
   template: {
     react: ({ totalDeposits, totalBorrowed, currentAPY, yieldReserve }) => (
       <>
