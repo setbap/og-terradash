@@ -6,6 +6,8 @@ import { withOGImage } from "next-api-og-image";
 export default withOGImage({
   type: 'png',
   quality: undefined,
+  width: 1024,
+  height: 1024,
   template: {
     react: ({ totalDeposits, totalBorrowed, currentAPY, yieldReserve }) => (
       <>
