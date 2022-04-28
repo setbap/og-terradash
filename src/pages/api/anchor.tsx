@@ -18,7 +18,7 @@ export default withOGImage({
             rel="stylesheet"
           />
         </head>
-        <div className="min-h-screen bg-black p-12 flex flex-col divide-y justify-center gap-4">
+        <div className="min-h-screen bg-black p-20 flex flex-col divide-y justify-center gap-4">
           <div className="flex justify-between">
             <div className="flex">
               <img alt="Anchor Icon" width="48" height="48" className="mr-4" src="https://app.anchorprotocol.com/assets/LogoTerra.114ab559.svg" />
