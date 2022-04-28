@@ -32,7 +32,7 @@ export default withOGImage({
               <img alt="TerraDash Icon" className="h-28 w-28" src="https://terradash.vercel.app/terradash.png" />
             </div>
             <span>
-              <p className="font-medium leading-normal text-5xl text-gray-500 pt-4">
+              <p className="font-medium leading-normal text-4xl text-gray-500 pt-4">
                 According our research
                 <span className="text-green-400">&nbsp;
                   {
@@ -47,7 +47,7 @@ export default withOGImage({
                 and
                 <span className="text-green-400">&nbsp;{goverannceProposal} Governance Proposals&nbsp;</span>.
                 Currently Terra Network has
-                <span className="text-red-400">&nbsp;{activeProposal}&nbsp;Active Governance Proposals</span>.
+                <span className="text-green-400">&nbsp;{activeProposal}&nbsp;Active Governance Proposals</span>.
                 <br />
                 <span className="text-base w-full mt-3 text-left">
                   for more information you can click this image or go to <span className="underline text-blue-300">TerraDash.Vercel.app</span>

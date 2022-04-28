@@ -31,7 +31,7 @@ export default withOGImage({
               <img alt="TerraDash Icon" className="h-28 w-28" src="https://terradash.vercel.app/terradash.png" />
             </div>
             <span>
-              <p style={{ fontSize: 40 }} className="font-medium leading-normal  text-gray-500 pt-4">
+              <p style={{ fontSize: 36 }} className="font-medium leading-normal  text-gray-500 pt-4">
                 According our research
                 Total Supply of UST is
                 <span className="text-green-400">&nbsp; {
