@@ -29,7 +29,7 @@ export default withOGImage({
                 <RiGovernmentLine className="h-24 w-24 text-blue-400 text-light mt-4" />
                 <h1 className="pl-4 text-8xl font-bold text-gray-300 leading-tight">Governance </h1>
               </div>
-              <img alt="TerraDash Icon" className="h-28 w-28" src="https://cdn.discordapp.com/attachments/964167275064197160/967881200570101810/Group_15.png" />
+              <img alt="TerraDash Icon" className="h-28 w-28" src="https://terradash.vercel.app/terradash.png" />
             </div>
             <span>
               <p className="font-medium leading-normal text-5xl text-gray-500 pt-4">

@@ -25,13 +25,13 @@ export default withOGImage({
           <div style={{ width: '1200px', height: '630px' }} className="mx-auto bg-black p-16 flex flex-col divide-y justify-center gap-4">
             <div className="flex justify-between">
               <div className="flex gap-2">
-                <img alt="Anchor Icon" className="h-24 w-24 self-center mt-4 -mb-1" src="/ust.png" />
+                <img alt="Anchor Icon" className="h-24 w-24 self-center mt-4 -mb-1" src="https://terradash.vercel.app/ust.png" />
                 <h1 className="text-8xl font-bold text-gray-300 leading-tight">UST </h1>
               </div>
-              <img alt="TerraDash Icon" className="h-28 w-28" src="/terradash.png" />
+              <img alt="TerraDash Icon" className="h-28 w-28" src="https://terradash.vercel.app/terradash.png" />
             </div>
             <span>
-              <p style={{ fontSize: 42 }} className="font-medium leading-normal  text-gray-500 pt-4">
+              <p style={{ fontSize: 40 }} className="font-medium leading-normal  text-gray-500 pt-4">
                 According our research
                 Total Supply of UST is
                 <span className="text-green-400">&nbsp; {

@@ -25,10 +25,10 @@ export default withOGImage({
           <div style={{ width: '1200px', height: '630px' }} className="mx-auto bg-black p-16 flex flex-col divide-y justify-center gap-4">
             <div className="flex justify-between">
               <div className="flex">
-                <img alt="Anchor Icon" width="80" height="80" className="mr-4" src="/anchor.svg" />
+                <img alt="Anchor Icon" width="80" height="80" className="mr-4" src="https://terradash.vercel.app/anchor.svg" />
                 <h1 className="text-8xl font-bold text-gray-300 leading-tight">Anchor </h1>
               </div>
-              <img alt="TerraDash Icon" className="h-28 w-28" src="/terradash.png" />
+              <img alt="TerraDash Icon" className="h-28 w-28" src="https://terradash.vercel.app/terradash.png" />
             </div>
             <span>
               <p className="font-medium leading-normal text-5xl text-gray-500 pt-4">
